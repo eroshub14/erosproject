@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lexend Deca';
+}
+.navbar{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.navbar ul{
+    float: left;
+    display: flex;
+    list-style: none;
+    gap: 8rem;
+    text-transform: 3px;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: gray;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/*FOR BANNER*/
+.banner{
+    background-size: cover;
+    height: 220%;
+    width: 110%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    transition: 2s ease;
+}
+.banner .glass-wrapper{
+    width: 30%;
+    height: 100%;
+    background: rgba(225, 225, 255, 0.15);
+    box-shadow: 0 0px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/*FOR TITLES*/
+.hero-title {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 7rem;
+}
+.hero-title p{
+    font-size: 47px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: white;
+}
+.hero-title .name{
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+.hero-title .details{
+    width: 60%;
+    padding-top: 1.5rem;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    padding-bottom: 2.5rem;
+}
+.hero-title .explore button{
+    background: rgba(189, 189, 189, 0.299);
+    box-shadow: 0 8px 32px 0 black;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: none;
+    color: white;
+    padding: 12px 50px;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.hero-title .explore button:hover{
+    transform: scale(1.05);
+}
+
+/*FOR LIST*/
+.tourist-list {
+    bottom: 100px;
+    position: absolute;
+    left: 35rem;
+}
+
+.tourist-list p {
+    color: white;
+    padding-left: 20px;
+    margin-bottom: auto;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.tourist-list ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    width: 65vw;
+    height: 5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tourist-list .thumbnail {
+    display: flex;
+    height: 10rem;
+    width: 18rem;
+    background-size: cover !important;
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+.tourist-list .thumbnail .details {
+    margin-top: auto;
+    padding: 10px 0px;
+    background: rgba(38, 38, 38, 0.05);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+/*FOR DETAILS*/
+.details .place-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.details .province {
+    font-weight: 300;
+
+}
+
+.tourist-list .active {
+    margin-top: -2rem;
+}
+
+
+/*FOR WRAPPER*/
+.image-wrapper {
+        bottom: -35rem;
+        position: absolute;
+        display: flex;
+        left: 35rem;
+        margin-top: 15rem;   
+        align-items: center;
+}
+
+.image-wrapper::before {
+        content: "";
+        position: absolute;
+        background: grey;
+        width: 30rem;
+        height: 40px;
+        bottom: -5rem;
+        left: 11rem;
+        filter: blur(20px);
+        border-radius: 50%;
+}
+
+.image-wrapper img{
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        transition: 0.5s ease-out 100ms;
+        cursor: pointer;
+}
+
+.image-wrapper img:hover {
+        transform: scale(1.05);
+}
+
+.image-wrapper .img1 {
+        width: 300px;
+        height: 20rem;
+        margin-right: -35px;
+}
+
+.image-wrapper .img2 {
+        width: 400px;
+        height: 25rem;
+        margin-right: -35px;
+}
+
+.image-wrapper .img3 {
+        width: 300px;
+        height: 20rem;
+}
